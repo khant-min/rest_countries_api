@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+span {
+  @apply font-bold mr-2;
+}
+
+@media (max-width: 600px) {
+  .article {
+    width: 20rem;
+    height: 26rem;
+  }
+  .img {
+    height: 14rem;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+#root {
+  overflow: hidden;
+}
+
+.sec li {
+  @apply flex gap-8 mt-6;
+}
